@@ -16,6 +16,13 @@ class Cart extends UnitTest
     const unit =
     [
         'class'   => 'Cart',
-        'methods' => []
+        'methods' => 
+        [
+            'insertItem'  => [['name' => 'orange', 'quantity' => 2, 'price' => 100]],
+            'selectItem'  => ['orange'],
+            'selectItems' => [],
+            'deleteItem'  => ['orange'],
+            'deleteItems' => []
+        ]
     ];
 }
