@@ -21,8 +21,6 @@ class Update extends CartExtends
      */
     public function item($code, Array $data) : Bool
     {
-        Properties::$items = (array) $this->driver->select($this->key);
-
         if( empty(Properties::$items) )
         {
             return false;

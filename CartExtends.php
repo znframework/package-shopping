@@ -37,5 +37,10 @@ class CartExtends
     public function constructor()
     {
         $this->key = md5('SystemCartData');
+
+        if( $sessionCart = $this->driver->select($this->key) )
+        {
+            Properties::$items = $sessionCart;
+        }
     }
 }

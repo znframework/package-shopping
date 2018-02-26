@@ -24,11 +24,6 @@ class Insert extends CartExtends
         {
             $product['quantity'] = 1;
         }
-        
-        if( $sessionCart = $this->driver->select($this->key) )
-        {
-            Properties::$items = $sessionCart;
-        }
 
         array_push(Properties::$items, $product);
 

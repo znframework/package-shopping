@@ -20,8 +20,6 @@ class Delete extends CartExtends
      */
     public function item($code) : Bool
     {
-        Properties::$items = (array) $this->driver->select($this->key);
-
         if( empty(Properties::$items) )
         {
             return false;
