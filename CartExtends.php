@@ -24,6 +24,8 @@ class CartExtends
     const driver =
     [
         'options'   => ['session', 'cookie'],
+        'default'   => 'ZN\Shopping\ShoppingDefaultConfiguration',
+        'config'    => 'Storage:shopping',
         'construct' => 'constructor'
     ];
 
